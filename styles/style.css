@@ -1,8 +1,3 @@
-/*@font-face {
-  font-family: "Helvetica Neue Thin";
-  src: url("../fonts/Helvetica_Neue.ttf");
-}*/
-
 .body {
   margin: 0;
 }
@@ -15,7 +10,7 @@
   /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue Thin', 'Arial', sans-serif;
+  font-family: 'Helvetica Neue', 'Arial', sans-serif;
   /* Позиционирование должно быть относительно общего блока */
   position: relative;
 }
@@ -44,7 +39,7 @@
 
 .header__title {
   width: 730px;
-  margin: auto 0;
+  align-self: center;
   padding-left: 64px;
   font-size: 102px;
   line-height: 96px;
@@ -157,11 +152,7 @@
 .table {
   width: 1100px;
   margin: 0 auto;
-}
-
-.table__blocks {
   padding: 0;
-  margin: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -238,16 +229,19 @@
   background: #1f1f1f;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .section-title_theme_dark {
   padding-top: 90px;
   color: #fff;
+  z-index: 1;
 }
 
 .section-subtitle_theme_dark {
   color: #fff;
   padding-bottom: 0;
+  z-index: 1;
 }
 
 .table_theme_dark {
@@ -270,6 +264,7 @@
   position: absolute;
   top: 0;
   right: -210px;
+  z-index: -1;
 }
 
 .footer {
@@ -334,14 +329,17 @@
   text-decoration: none;
 }
 
-.footer__social-icon_type_fb {
-  background: url('../images/facebook_color_white.svg') no-repeat;
+.footer__link_type_fb::before {
+  content: url('../images/facebook_color_white.svg');
+  padding-right: 10px;
 }
 
-.footer__social-icon_type_vk {
-  background: url('../images/vk_color_white.svg') no-repeat;
+.footer__link_type_vk::before {
+  content: url('../images/vk_color_white.svg');
+  padding-right: 10px;
 }
 
-.footer__social-icon_type_insta {
-  background: url('../images/instagram_color_white.svg') no-repeat;
+.footer__link_type_insta::before {
+  content: url('../images/instagram_color_white.svg');
+  padding-right: 10px;
 }
