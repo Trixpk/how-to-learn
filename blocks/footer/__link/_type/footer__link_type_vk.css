@@ -1,0 +1,4 @@
+.footer__link_type_vk::before {
+    content: url('../../../../images/vk_color_white.svg');
+    padding-right: 10px;
+}
