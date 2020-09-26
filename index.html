@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="pages/index.css">
     <title>Научиться учиться</title>
 </head>
 <body class="body">
 <div class="page">
     <header class="header">
-        <div class="logo logo_place_header"></div>
+        <div class="logo logo_place_header logo_height_header"></div>
         <h1 class="header__title">Научиться учиться</h1>
         <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы можете использовать в своей
             жизни? <a href="#" class="link header__link">Узнать &rarr;</a></p>
@@ -78,18 +77,14 @@
 
         <section class="video video_margin">
             <h2 class="section-title">Видео нa TED</h2>
-            <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+            <p class="section-subtitle section-subtitle_padding-bottom">Для тех, кто любит прокрастинировать</p>
             <div class="video__iframes">
-                <div class="video__iframe">
-                    <iframe class="video__element" src="https://www.youtube.com/embed/arj7oStGLkU"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
-                <div class="video__iframe">
-                    <iframe class="video__element" src="https://www.youtube.com/embed/5MgBikgcWnY"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                </div>
+                <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
             </div>
         </section>
 
@@ -110,12 +105,12 @@
         <section class="feynman">
             <h2 class="feynman__title">Метод Фейнмана</h2>
             <p class="feynman__subtitle">Выучить и не забыть.</p>
-            <a href="#" class="feynman__link">Подробнее &rarr;</a>
+            <a href="#" class="link feynman__link">Подробнее &rarr;</a>
         </section>
 
         <section class="digits">
             <h2 class="section-title">Цифры и факты</h2>
-            <p class="section-subtitle">Про учёбу и мозг</p>
+            <p class="section-subtitle section-subtitle_padding-bottom">Про учёбу и мозг</p>
             <ul class="table">
                 <li class="table__cell">
                     <h2 class="table__heading">86 миллиардов</h2>
@@ -224,28 +219,41 @@
         </section>
         <section class="resources resources_margin">
             <h2 class="section-title">Полезные ресурсы</h2>
-            <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-            <div class="resources__logo-zone">
-                <img class="resources__logo" src="images/logo/resources-arzamas.svg" alt="Arzama">
-                <img class="resources__logo" src="images/logo/resources-n1.svg" alt="N+1">
-                <img class="resources__logo" src="images/logo/resources-strelka.svg" alt="Стрелка">
-                <img class="resources__logo" src="images/logo/resources-polka.svg" alt="Полка">
-            </div>
+            <p class="section-subtitle section-subtitle_padding-bottom">Больше материалов о техниках и лайфхаках
+                обучения</p>
+            <ul class="resources__logo-zone">
+                <li class="resources__logo">
+                    <a href="#" class="link resources__link"><img class="resources__image"
+                                                                  src="images/logo/resources-arzamas.svg" alt="Арзамас"></a>
+                </li>
+                <li class="resources__logo">
+                    <a href="#" class="link resources__link"><img class="resources__image"
+                                                                  src="images/logo/resources-n1.svg" alt="N+1"></a>
+                </li>
+                <li class="resources__logo">
+                    <a href="#" class="link resources__link"><img class="resources__image"
+                                                                  src="images/logo/resources-strelka.svg" alt="Стрелка"></a>
+                </li>
+                <li class="resources__logo">
+                    <a href="#" class="link resources__link"><img class="resources__image"
+                                                                  src="images/logo/resources-polka.svg" alt="Полка"></a>
+                </li>
+            </ul>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__columns">
             <div class="footer__column footer__column_content_copyright">
-                <div class="logo logo_place_footer"></div>
+                <div class="logo logo_place_footer logo_height_footer"></div>
                 <p class="footer__author">&copy; 2020. Павел Поляков</p>
             </div>
             <div class="footer__column footer__column_content_info">
                 <h3 class="footer__column-heading">О Практикуме</h3>
                 <nav class="footer__nav">
                     <ul class="footer__column-links">
-                        <li><a href="#" class="footer__link">Главная</a></li>
-                        <li><a href="#" class="footer__link">Концепция</a></li>
-                        <li><a href="#" class="footer__link">Наставники</a></li>
+                        <li><a href="#" class="link footer__link">Главная</a></li>
+                        <li><a href="#" class="link footer__link">Концепция</a></li>
+                        <li><a href="#" class="link footer__link">Наставники</a></li>
                     </ul>
                 </nav>
             </div>
@@ -254,15 +262,15 @@
                 <nav class="footer__nav">
                     <ul class="footer__column-links">
                         <li>
-                            <a href="#" class="footer__link footer__link_type_fb">Facebook</a>
+                            <a href="#" class="link footer__link footer__link_type_fb">Facebook</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer__link footer__link_type_vk">ВКонтакте</a>
+                            <a href="#" class="link footer__link footer__link_type_vk">ВКонтакте</a>
                         </li>
 
                         <li>
-                            <a href="#" class="footer__link footer__link_type_insta">Instagram</a>
+                            <a href="#" class="link footer__link footer__link_type_insta">Instagram</a>
                         </li>
                     </ul>
                 </nav>

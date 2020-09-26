@@ -3,6 +3,3 @@
     height: 32px;
     background-image: url('../../images/logo_place_header.svg');
 }
-
-@import url(_place/logo_place_header.css);
-@import url(_place/logo_place_footer.css);
